@@ -28,3 +28,26 @@ router.put("/api/workouts/:id", ({ params, body }, res) => {
             res.json(err);
         });
 });
+
+router.get("/api/workouts", (req, res) => {
+    Fitness.findOneAndUpdate({})
+        .then((dbFitness) => {
+            res.json(dbFitness);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+});
+
+router.get("/api/workouts/range", (req, res) => {
+    Fitness.findOneAndUpdate({})
+        .limit(9)
+        .then((dbFitness) => {
+            res.json(dbFitness);
+        })
+        .catch((err) => {
+            res.json(err);
+        })
+});
+
+module.exports = router;
