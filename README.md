@@ -9,7 +9,7 @@ Before you begin, ensure you have met the following requirements:
  
 
 # GitHub Link
-https://github.com/goreno41/ecommerce_back_end.git
+https://github.com/goreno41/fitness_tracker
 
 # Heroku Link
 https://warm-headland-60036.herokuapp.com/
